@@ -9,7 +9,8 @@ const app = express();
 
 app.use(express.json());
 
-app.listen(3000, () => {
+const port = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log("david app is listening");
 });
 
